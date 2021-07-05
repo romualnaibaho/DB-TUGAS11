@@ -1,0 +1,24 @@
+---
+1. Buatlah user baru dengan nama Niomic dengan password c0b4d1b4c4!
+
+   Jawab:
+   CREATE USER 'NIOMIC'@'localhost' identified by 'c0b4d1b4c4!';
+
+
+---
+2. Ubah password menjadi indonesiaku dengan perintah update set
+   
+   Jawab:
+   SET PASSWORD FOR 'NIOMIC'@'localhost' = password('indonesiaku');
+
+---
+3. Berikan hak akses ke user Niomic untuk tabel mahasiswa pada database belajar
+
+   Jawab:
+   grant all on belajar.mahasiswa to NIOMIC@localhost;
+
+---
+4. Hapus user Niomic
+   
+   Jawab:
+   DROP USER 'NIOMIC';
